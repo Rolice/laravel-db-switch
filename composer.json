@@ -1,5 +1,5 @@
 {
-  "name": "Rolice/laravel-db-switch",
+  "name": "rolice/laravel-db-switch",
   "description": "Simple and light DB switcher for Laravel.",
   "type": "library",
   "minimum-stability": "stable",
