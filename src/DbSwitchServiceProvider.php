@@ -34,8 +34,6 @@ class DbSwitchServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(realpath(__DIR__ . '/../config/intercom.php'), 'intercom');
-
         $this->app->singleton('db.switch', function () {
             return new DbSwitchService;
         });
