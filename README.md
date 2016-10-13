@@ -79,11 +79,13 @@ You can use the package service either through the facade `DbSwitch` or through 
 service container of Laravel:
 
 ```php
-DbSwitch::to('my-cool-db'); // Change the defaut connection through the facade
-DbSwitch::connectionTo('my-cool-conenction', 'my-cool-db'); // Change specific connection database through facade
+// Usage through the facade - DbSwitch
+DbSwitch::to('my-cool-db'); // The defaut connection
+DbSwitch::connectionTo('my-cool-conenction', 'my-cool-db'); // A specific connection database
 
-app('db.switch')->to('my-cool-db'); // Cahnge the default connection through service container
-app('db.switch')->connectionTo('my-cool-conenction', 'my-cool-db'); // Change a connection database throught container
+// Usage through the Laravel Service Container (IoC)
+app('db.switch')->to('my-cool-db'); // The defaut connection
+app('db.switch')->connectionTo('my-cool-conenction', 'my-cool-db'); // A specific connection database
 ```
 
 That is the whole scope of this package.
