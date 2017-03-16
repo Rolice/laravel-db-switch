@@ -31,7 +31,9 @@ or if you have no global composer installation exists with your project, but sim
 php /path/to/composer.phar require 'Rolice/laravel-db-switch' # with local composer.phar file
 ```
 
-This should add the package with your project and after that you will be able to install it (if not yet):
+The above should add the package with your project directly.
+
+Alternatively, you can manually add `rolice/laravel-db-switch` in your `composer.json` file in the `require` section and then  you will be able to install it with:
 
 ```sh
 composer install
