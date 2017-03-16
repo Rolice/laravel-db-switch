@@ -39,12 +39,12 @@ class DbSwitchService
     protected function reconnect($key, $database)
     {
         $connections = DB::getConnections();
-        /** @var MySqlConnection $platform */
-        $platform = isset($connections[$key]) ? $connections[$key] : '';
+        /** @var MySqlConnection $connection */
+        $connection = isset($connections[$key]) ? $connections[$key] : '';
 
-        if (is_object($platform) && $platform->getDatabaseName() != $database) {
-            $platform->setDatabaseName($database);
-            $platform->reconnect();
+        if (is_object($connection) && $connection->getDatabaseName() != $database) {
+            $connection->setDatabaseName($database);
+            $connection->reconnect();
         }
     }
 
