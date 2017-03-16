@@ -50,7 +50,8 @@ have downloaded a copy of the official *composer.phar*. More information could b
 the [Prerequisites](##Prerequisites).
 
 After you are ready with the package installation we have to enable the service provider inside the application config.
-Just open the `{your/project/folder}/config/app.php` file of your application (by default should be located there).
+
+**For Laravel**: Just open the `{your/project/folder}/config/app.php` file of your application (by default should be located there).
 
 Add the service provider inside the `providers` section (array):
 
@@ -65,6 +66,24 @@ Preferably under the comment like:
  * Package Service Providers...
  */
  Rolice\LaravelDbSwitch\DbSwitchServiceProvider::class,
+```
+
+**For Lumen**: You should register the service provider inside `bootstrap/app.php` like:
+
+```php
+/*
+|--------------------------------------------------------------------------
+| Register Service Providers
+|--------------------------------------------------------------------------
+|
+| Here we will register all of the application's servipoce providers which
+| are used to bind services into the container. Service providers are
+| totally optional, so you are not required to uncomment this line.
+|
+*/
+// ...
+$app->register(Rolice\LaravelDbSwitch\DbSwitchServiceProvider::class);
+// ...
 ```
 
 Now you can register the facade in the section below named `aliases` (array), in the same file `config/app.php` by
