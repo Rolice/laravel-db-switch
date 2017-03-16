@@ -22,13 +22,13 @@ The package is installed in the traditional way through composer. You can do thi
 in the folder of your Laravel project:
 
 ```sh
-composer require 'Rolice/laravel-db-switch' # with globally installed composer
+composer require 'rolice/laravel-db-switch' # with globally installed composer
 ```
 
 or if you have no global composer installation exists with your project, but simply `composer.phar` file:
 
 ```sh
-php /path/to/composer.phar require 'Rolice/laravel-db-switch' # with local composer.phar file
+php /path/to/composer.phar require 'rolice/laravel-db-switch' # with local composer.phar file
 ```
 
 The above should add the package with your project directly.
