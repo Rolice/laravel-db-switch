@@ -13,7 +13,7 @@ or Lumen project, but if for some reason you are new to it you will find the off
 [composer website](http://getcomposer.org/) very useful. You will find detailed documentation, use-cases and scenarios
 plus full instruction set about the downloading and installing composer, including all the download files needed.
 
-### Laravel Project
+### Laravel/Lumen Project
 We assume you have prepared and installed already your Laravel or Lumen project and you have navigated to its folder
 with your console/terminal application.
 
