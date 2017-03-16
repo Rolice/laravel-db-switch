@@ -86,14 +86,14 @@ $app->register(Rolice\LaravelDbSwitch\DbSwitchServiceProvider::class);
 // ...
 ```
 
-Now you can register the facade in the section below named `aliases` (array), in the same file `config/app.php` by
+**For Laravel**: Now you can register the facade in the section below named `aliases` (array), in the same file `config/app.php` by
 adding the following like there:
 
 ```php
 'DbSwitch' => Rolice\LaravelDbSwitch\Facades\DbSwitch::class,
 ```
 
-For Lumen you can enable facades and pass it along with that:
+**For Lumen**: You can enable facades and pass it along with:
 
 ```php
 $app->withFacades(true, [
@@ -101,7 +101,7 @@ $app->withFacades(true, [
 ]);
 ```
 
-or you can directly enable it the same way, but with raw code, an example:
+...or you can directly enable it the same way, but with raw code, an example:
 
 ```php
 /*
