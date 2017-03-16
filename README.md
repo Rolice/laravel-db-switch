@@ -2,7 +2,7 @@
 Composer package for Laravel that enables easy replacement of database instance.
 The package is highly suitable for similar databases that run different copies of a same program.
 
-This package is being developed and tested under **Laravel 5.3**. However it should be compatible with the older releases
+This package is being developed and tested under **Laravel 5.3**, **Laravel 5.4** and **Lumen 5.4**. However it should be compatible with the older releases
 of Laravel, expecting at least as versions 5.0.
 
 ## Prerequisites
@@ -73,6 +73,30 @@ adding the following like there:
 ```php
 'DbSwitch' => Rolice\LaravelDbSwitch\Facades\DbSwitch::class,
 ```
+
+For Lumen you can enable facades and pass it along with that:
+
+```php
+$app->withFacades(true, [
+    Rolice\LaravelDbSwitch\Facades\DbSwitch::class => 'DBSwitch'
+]);
+```
+
+or you can directly enable it the same way, but with raw code, an example:
+
+```php
+/*
+|--------------------------------------------------------------------------
+| Register Facades
+|--------------------------------------------------------------------------
+|
+| A config section for registering facades through class aliases.
+|
+*/
+
+class_alias(\Rolice\LaravelDbSwitch\Facades\DbSwitch::class, 'DbSwitch');
+```
+
 
 Now the package should be available and running with your project.
 
