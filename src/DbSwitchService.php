@@ -6,7 +6,11 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Database\MySqlConnection;
 
 /**
- * Class DbSwitcher
+ * The service class itself registered by the service provider inside Laravel/Lumen application.
+ * @name DbSwitchService
+ * @package LaravelDbSwitch
+ * @author Lyubomir Gardev <l.gardev@intellisys.org>
+ * @version 1.0
  */
 class DbSwitchService
 {
