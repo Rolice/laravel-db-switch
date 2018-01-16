@@ -4,8 +4,10 @@ namespace Rolice\LaravelDbSwitch;
 use Illuminate\Support\ServiceProvider;
 
 /**
- * Class IntercomServiceProvider
- * @package HelloHungry\Intercom
+ * Class DbSwitchServiceProvider
+ * @package LaravelDbSwitch
+ * @author Lyubomir Gardev <l.gardev@intellisys.org>
+ * @version 1.0
  */
 class DbSwitchServiceProvider extends ServiceProvider
 {
