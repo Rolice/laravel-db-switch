@@ -4,7 +4,8 @@ namespace Rolice\LaravelDbSwitch;
 use Illuminate\Support\ServiceProvider;
 
 /**
- * Class DbSwitchServiceProvider
+ * Class that registers the package functionality inside Laravel application.
+ * @name DbSwitchServiceProvider
  * @package LaravelDbSwitch
  * @author Lyubomir Gardev <l.gardev@intellisys.org>
  * @version 1.0
